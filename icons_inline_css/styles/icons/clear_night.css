@@ -1,0 +1,38 @@
+svg {
+  shape-rendering: geometricPrecision; }
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%; }
+
+.climacon.clear-night .fill {
+  fill: #fff; }
+.climacon.clear-night .stroke {
+  fill: #fff; }
+.climacon.clear-night .moon {
+  animation-name: wobble; }
+  .climacon.clear-night .moon .stroke {
+    fill: #f5f3ce; }
+  .climacon.clear-night .moon .fill {
+    fill: #f1eeb9; }
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0); }
+  25% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(0); }
+  75% {
+    transform: rotate(15deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+/*# sourceMappingURL=clear_night.css.map */

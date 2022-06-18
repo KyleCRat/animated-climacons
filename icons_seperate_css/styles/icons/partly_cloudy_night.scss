@@ -1,0 +1,59 @@
+// Animations: behindCloudMove, wobble
+
+@import '../variables';
+
+.climacon.partly-cloudy-night {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .cloud {
+    .fill {
+      fill: $cloud-fill;
+    }
+
+    .stroke {
+      fill: $cloud-stroke;
+    }
+
+    &.dark {
+      .fill {
+        fill: $cloud-dark-fill;
+      }
+
+      .stroke {
+        fill: $cloud-dark-stroke;
+      }
+    }
+  }
+
+  .moon-wrapper {
+    transform: translateX(0) translateY(0);
+    animation-delay: 0;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-name: behindCloudMove;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .moon {
+    animation-delay: 3s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: wobble;
+    animation-timing-function: linear;
+
+    .stroke {
+      fill: $moon-stroke;
+    }
+
+    .fill {
+      fill: $moon-fill;
+    }
+  }
+}

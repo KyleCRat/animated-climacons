@@ -1,0 +1,66 @@
+svg {
+  shape-rendering: geometricPrecision; }
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%; }
+
+.climacon.thunderstorm .fill {
+  fill: #fff; }
+.climacon.thunderstorm .stroke {
+  fill: #fff; }
+.climacon.thunderstorm .cloud .fill {
+  fill: #d9d9d9; }
+.climacon.thunderstorm .cloud .stroke {
+  fill: #fff; }
+.climacon.thunderstorm .cloud.dark .fill {
+  fill: #999999; }
+.climacon.thunderstorm .cloud.dark .stroke {
+  fill: #bfbfbf; }
+.climacon.thunderstorm .lightning .fill {
+  fill: #fffdbc; }
+.climacon.thunderstorm .lightning {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-name: lightningFlash;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  fill-opacity: 0; }
+
+@keyframes lightningFlash {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  1% {
+    fill-opacity: 1;
+    stroke-opacity: 1; }
+  7% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  50% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  51% {
+    fill-opacity: 1;
+    stroke-opacity: 1; }
+  53% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  54% {
+    fill-opacity: 1;
+    stroke-opacity: 1; }
+  60% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0; } }
+
+/*# sourceMappingURL=thunderstorm.css.map */

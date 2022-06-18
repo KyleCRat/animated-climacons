@@ -1,0 +1,53 @@
+// Animations: behindCloudMove, rotate, fillOpacity
+
+@import '../variables';
+
+.climacon.partly-cloudy-day {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .sun-wrapper {
+    transform: translateX(0) translateY(0);
+    animation-delay: 0;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-name: behindCloudMove;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .sun {
+    animation-delay: 3s;
+    animation-duration: 36s;
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+    animation-timing-function: linear;
+
+    .fill {
+      fill: $sun-fill;
+    }
+
+    .stroke {
+      fill: $sun-stroke;
+    }
+  }
+
+  .sun-spoke {
+    animation-delay: 3s, 3s;
+    animation-duration: 3s;
+    animation-iteration-count: 1, infinite;
+    animation-name: fillOpacity, scale;
+    animation-fill-mode: both;
+    fill-opacity: 0;
+    animation-direction: alternate;
+  }
+
+  .sun-spoke:nth-child(even) {
+    animation-delay: 3s, 6s;
+  }
+}

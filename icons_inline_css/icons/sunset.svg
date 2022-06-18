@@ -1,0 +1,97 @@
+<svg version="1.1"
+     id="sunriseFill"
+     class="climacon sunset"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px"
+     y="0px"
+     viewBox="15 15 70 70"
+     enable-background="new 15 15 70 70"
+     xml:space="preserve">
+<style>
+svg {
+  shape-rendering: geometricPrecision; }
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%; }
+
+.climacon.sunset .fill {
+  fill: #fff; }
+.climacon.sunset .stroke {
+  fill: #fff; }
+.climacon.sunset .sun .fill {
+  fill: #cdcd1d; }
+.climacon.sunset .sun .stroke {
+  fill: #dfdf20; }
+.climacon.sunset .arrow .fill {
+  fill: #000; }
+.climacon.sunset .arrow-down {
+  animation-duration: 3s;
+  animation-name: fillOpacity2, translateArrowDown;
+  fill-opacity: 0; }
+.climacon.sunset .sun-spoke {
+  animation-delay: 0;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: scale;
+  animation-fill-mode: both;
+  animation-direction: alternate; }
+  .climacon.sunset .sun-spoke:nth-child(even) {
+    animation-delay: 3s; }
+
+@keyframes fillOpacity2 {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  50% {
+    fill-opacity: 1;
+    stroke-opacity: 1; }
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0; } }
+@keyframes translateArrowDown {
+  0% {
+    transform: translateY(2px); }
+  100% {
+    transform: translateY(5px); } }
+@keyframes scale {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(0.5, 0.5); } }
+
+/*# sourceMappingURL=sunset.css.map */
+</style>
+  <g>
+    <g class="sun">
+      <g class="sun-spokes">
+        <path class="stroke sun-spoke sun-spoke-east" d="M71.997,57.999h-3.998c-1.104,0-2-0.896-2-1.999s0.896-2,2-2h3.998c1.104,0,2,0.896,2,2S73.104,57.999,71.997,57.999z"/>
+        <path class="stroke sun-spoke sun-spoke-east" d="M64.143,44.688c-0.781,0.781-2.05,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l2.828-2.828c0.778-0.781,2.047-0.781,2.828,0c0.778,0.781,0.778,2.047,0,2.828L64.143,44.688z"/>
+        <path class="stroke sun-spoke sun-spoke-east" d="M50.001,40.002c-1.105,0-2-0.896-2-2v-3.999c0-1.104,0.895-2,2-2c1.104,0,2,0.896,2,2v3.999C52.001,39.106,51.104,40.002,50.001,40.002z"/>
+        <path class="stroke sun-spoke sun-spoke-east" d="M35.86,44.688l-2.828-2.828c-0.781-0.781-0.781-2.047,0-2.828c0.781-0.781,2.047-0.781,2.828,0l2.828,2.828c0.781,0.781,0.781,2.047,0,2.828C37.907,45.469,36.641,45.469,35.86,44.688z"/>
+        <path class="stroke sun-spoke sun-spoke-east" d="M34.002,56c0,1.104-0.896,1.999-2,1.999h-4c-1.104,0-1.999-0.896-1.999-1.999s0.896-2,1.999-2h4C33.107,54,34.002,54.896,34.002,56z"/>
+      </g>
+
+      <g class="body">
+        <circle class="stroke" cx="50.001" cy="56" r="11.999"/>
+        <circle class="fill" cx="50.001" cy="56" r="7.999"/>
+      </g>
+
+      <g class="arrow">
+        <path class="fill arrow-down" d="M50,49.107c0.552,0,1,0.448,1,1.002v3.83l2.535-2.535c0.391-0.391,1.022-0.391,1.414,0c0.391,0.391,0.391,1.023,0,1.414l-4.242,4.242c-0.392,0.391-1.022,0.391-1.414,0l-4.242-4.242c-0.391-0.391-0.391-1.023,0-1.414c0.392-0.391,1.023-0.391,1.414,0L49,53.939v-3.83C49,49.555,49.447,49.107,50,49.107z"/>
+      </g>
+
+      <g class="horzon">
+        <path class="fill" d="M59.999,63.999H40.001c-1.104,0-1.999,0.896-1.999,2s0.896,1.999,1.999,1.999h19.998c1.104,0,2-0.895,2-1.999S61.104,63.999,59.999,63.999z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+svg {
+  shape-rendering: geometricPrecision;
+}
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+// Animations: translateWind
+
+@import '../variables';
+
+.climacon.wind {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .wind {
+    animation-duration: 4s;
+    animation-name: translateWind;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+}
+@keyframes translateWind {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateX(4.998px);
+  }
+
+  75% {
+    transform: translateX(-4.998px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

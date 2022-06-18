@@ -1,0 +1,112 @@
+svg {
+  shape-rendering: geometricPrecision;
+}
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+// Animations: behindCloudMove, wobble
+
+@import '../variables';
+
+.climacon.partly-cloudy-night {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .cloud {
+    .fill {
+      fill: $cloud-fill;
+    }
+
+    .stroke {
+      fill: $cloud-stroke;
+    }
+
+    &.dark {
+      .fill {
+        fill: $cloud-dark-fill;
+      }
+
+      .stroke {
+        fill: $cloud-dark-stroke;
+      }
+    }
+  }
+
+  .moon-wrapper {
+    transform: translateX(0) translateY(0);
+    animation-delay: 0;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-name: behindCloudMove;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .moon {
+    animation-delay: 3s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: wobble;
+    animation-timing-function: linear;
+
+    .stroke {
+      fill: $moon-stroke;
+    }
+
+    .fill {
+      fill: $moon-fill;
+    }
+  }
+}
+@keyframes behindCloudMove {
+  0% {
+    transform: translateX(-10.75px) translateY(10.75px);
+  }
+
+  20% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(-10.75px) translateY(10.75px);
+  }
+}
+@keyframes wobble {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

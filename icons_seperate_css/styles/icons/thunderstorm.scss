@@ -1,0 +1,48 @@
+// Animations: lightningFlash
+
+@import '../variables';
+
+.climacon.thunderstorm {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .cloud {
+    .fill {
+      fill: $cloud-fill;
+    }
+
+    .stroke {
+      fill: $cloud-stroke;
+    }
+
+    &.dark {
+      .fill {
+        fill: $cloud-dark-fill;
+      }
+
+      .stroke {
+        fill: $cloud-dark-stroke;
+      }
+    }
+  }
+
+  .lightning {
+    .fill {
+      fill: $lightning;
+    }
+  }
+
+  .lightning {
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: lightningFlash;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    fill-opacity: 0;
+  }
+}

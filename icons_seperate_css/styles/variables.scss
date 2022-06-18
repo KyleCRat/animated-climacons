@@ -1,0 +1,29 @@
+$white: #fff;
+$black: #000;
+
+$background: lighten($black, 25%);
+
+$climacon-default-stroke: $white;
+$climacon-default-fill: $white;
+
+$cloud-stroke: $white;
+$cloud-fill: darken($white, 15%);
+
+$cloud-dark-stroke: darken($cloud-stroke, 25%);
+$cloud-dark-fill: darken($cloud-dark-stroke, 15%);
+
+$sun-stroke: desaturate(#ff0, 25%);
+$sun-fill: darken($sun-stroke, 4%);
+
+$snow: $white;
+
+$ice: #dbe1f1;
+
+$moon-stroke: #f5f3ce;
+$moon-fill: darken($moon-stroke, 5%);
+
+$water: #a0a9c1;
+
+$lightning: #fffdbc;
+
+$arrow: $black;

@@ -1,0 +1,45 @@
+// Animations: translateTornado1, translateTornado2, translateTornado3, translateTornado4, translateTornado5, translateTornado6
+
+@import '../variables';
+
+.climacon.tornado {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .tornado-line {
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: translateTornado1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+    &:nth-child(1) {
+      animation-name: translateTornado1;
+    }
+
+    &:nth-child(2) {
+      animation-name: translateTornado2;
+    }
+
+    &:nth-child(3) {
+      animation-name: translateTornado3;
+    }
+
+    &:nth-child(4) {
+      animation-name: translateTornado4;
+    }
+
+    &:nth-child(5) {
+      animation-name: translateTornado5;
+    }
+
+    &:nth-child(6) {
+      animation-name: translateTornado6;
+    }
+  }
+}

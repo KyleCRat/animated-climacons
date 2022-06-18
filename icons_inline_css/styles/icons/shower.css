@@ -1,0 +1,55 @@
+svg {
+  shape-rendering: geometricPrecision; }
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%; }
+
+.climacon.shower .fill {
+  fill: #fff; }
+.climacon.shower .stroke {
+  fill: #fff; }
+.climacon.shower .water .fill {
+  fill: #a0a9c1; }
+.climacon.shower .cloud .fill {
+  fill: #d9d9d9; }
+.climacon.shower .cloud .stroke {
+  fill: #fff; }
+.climacon.shower .cloud.dark .fill {
+  fill: #999999; }
+.climacon.shower .cloud.dark .stroke {
+  fill: #bfbfbf; }
+.climacon.shower .shower {
+  animation-duration: 2s;
+  animation-name: rainFall, fillOpacity2;
+  animation-timing-function: ease-in;
+  fill-opacity: 0; }
+.climacon.shower .shower:nth-child(n+4) {
+  animation-delay: 1s; }
+.climacon.shower .shower-alt:nth-child(2) {
+  animation-delay: 1s; }
+
+@keyframes rainFall {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(14px); } }
+@keyframes fillOpacity2 {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  50% {
+    fill-opacity: 1;
+    stroke-opacity: 1; }
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0; } }
+
+/*# sourceMappingURL=shower.css.map */

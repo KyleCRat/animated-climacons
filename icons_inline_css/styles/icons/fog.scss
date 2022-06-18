@@ -1,0 +1,74 @@
+svg {
+  shape-rendering: geometricPrecision;
+}
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+// Animations: translateFog, fillOpacityFog
+
+@import '../variables';
+
+.climacon.fog {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .fog-line {
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: translateFog, fillOpacityFog;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    fill-opacity: .5;
+
+    &:nth-child(even) {
+      animation-delay: 6s;
+    }
+  }
+}
+@keyframes translateFog {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateX(2.5px);
+  }
+
+  75% {
+    transform: translateX(-2.5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fillOpacityFog {
+  0% {
+    fill-opacity: 0.5;
+    stroke-opacity: 0.5;
+  }
+
+  50% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+
+  100% {
+    fill-opacity: 0.5;
+    stroke-opacity: 0.5;
+  }
+}

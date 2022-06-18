@@ -1,0 +1,57 @@
+svg {
+  shape-rendering: geometricPrecision; }
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%; }
+
+.climacon.sleet .fill {
+  fill: #fff; }
+.climacon.sleet .stroke {
+  fill: #fff; }
+.climacon.sleet .ice .fill {
+  fill: #dbe1f1; }
+.climacon.sleet .cloud .fill {
+  fill: #d9d9d9; }
+.climacon.sleet .cloud .stroke {
+  fill: #fff; }
+.climacon.sleet .cloud.dark .fill {
+  fill: #999999; }
+.climacon.sleet .cloud.dark .stroke {
+  fill: #bfbfbf; }
+.climacon.sleet .sleet {
+  animation-duration: 1s;
+  animation-name: drizzleFall, fillOpacity2;
+  animation-timing-function: ease-in;
+  fill-opacity: 0; }
+.climacon.sleet .sleet:nth-child(1) {
+  animation-delay: 0s; }
+.climacon.sleet .sleet:nth-child(2) {
+  animation-delay: .6s; }
+.climacon.sleet .sleet:nth-child(3) {
+  animation-delay: 1.2s; }
+
+@keyframes drizzleFall {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(21px); } }
+@keyframes fillOpacity2 {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  50% {
+    fill-opacity: 1;
+    stroke-opacity: 1; }
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0; } }
+
+/*# sourceMappingURL=sleet.css.map */

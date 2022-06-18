@@ -1,0 +1,58 @@
+// Animations: drizzleFall, fillOpacity2
+
+@import '../variables';
+
+.climacon.rain {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .water {
+    .fill {
+      fill: $water;
+    }
+  }
+
+  .cloud {
+    .fill {
+      fill: $cloud-fill;
+    }
+
+    .stroke {
+      fill: $cloud-stroke;
+    }
+
+    &.dark {
+      .fill {
+        fill: $cloud-dark-fill;
+      }
+
+      .stroke {
+        fill: $cloud-dark-stroke;
+      }
+    }
+  }
+
+  .rain {
+    animation-duration: 1s;
+    animation-name: drizzleFall, fillOpacity2;
+    animation-timing-function: ease-in;
+    fill-opacity: 0;
+  }
+
+  .rain:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .rain:nth-child(2) {
+    animation-delay: .6s;
+  }
+
+  .rain:nth-child(3) {
+    animation-delay: 1.2s;
+  }
+}

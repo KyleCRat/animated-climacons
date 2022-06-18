@@ -1,0 +1,67 @@
+svg {
+  shape-rendering: geometricPrecision; }
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%; }
+
+.climacon.partly-cloudy-night .fill {
+  fill: #fff; }
+.climacon.partly-cloudy-night .stroke {
+  fill: #fff; }
+.climacon.partly-cloudy-night .cloud .fill {
+  fill: #d9d9d9; }
+.climacon.partly-cloudy-night .cloud .stroke {
+  fill: #fff; }
+.climacon.partly-cloudy-night .cloud.dark .fill {
+  fill: #999999; }
+.climacon.partly-cloudy-night .cloud.dark .stroke {
+  fill: #bfbfbf; }
+.climacon.partly-cloudy-night .moon-wrapper {
+  transform: translateX(0) translateY(0);
+  animation-delay: 0;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-name: behindCloudMove;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+.climacon.partly-cloudy-night .moon {
+  animation-delay: 3s;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-name: wobble;
+  animation-timing-function: linear; }
+  .climacon.partly-cloudy-night .moon .stroke {
+    fill: #f5f3ce; }
+  .climacon.partly-cloudy-night .moon .fill {
+    fill: #f1eeb9; }
+
+@keyframes behindCloudMove {
+  0% {
+    transform: translateX(-10.75px) translateY(10.75px); }
+  20% {
+    transform: translateX(0) translateY(0); }
+  50% {
+    transform: translateX(0) translateY(0); }
+  100% {
+    transform: translateX(-10.75px) translateY(10.75px); } }
+@keyframes wobble {
+  0% {
+    transform: rotate(0); }
+  25% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(0); }
+  75% {
+    transform: rotate(15deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+/*# sourceMappingURL=partly_cloudy_night.css.map */

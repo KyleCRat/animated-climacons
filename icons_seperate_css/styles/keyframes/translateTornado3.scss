@@ -1,0 +1,17 @@
+@keyframes translateTornado3 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateX(8px);
+  }
+
+  75% {
+    transform: translateX(-8px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

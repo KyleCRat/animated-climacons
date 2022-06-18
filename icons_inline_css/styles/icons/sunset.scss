@@ -1,0 +1,97 @@
+svg {
+  shape-rendering: geometricPrecision;
+}
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+// Animations: fillOpacity2, translateArrowDown, scale
+
+@import '../variables';
+
+.climacon.sunset {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .sun {
+    .fill {
+      fill: $sun-fill;
+    }
+
+    .stroke {
+      fill: $sun-stroke;
+    }
+  }
+
+  .arrow {
+    .fill {
+      fill: $black;
+    }
+  }
+
+  .arrow-down {
+    animation-duration: 3s;
+    animation-name: fillOpacity2, translateArrowDown;
+    fill-opacity: 0;
+  }
+
+  .sun-spoke {
+    animation-delay: 0;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: scale;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+
+    &:nth-child(even) {
+      animation-delay: 3s;
+    }
+  }
+}
+@keyframes fillOpacity2 {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+
+  50% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+}
+@keyframes translateArrowDown {
+  0% {
+    transform: translateY(2px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1,1);
+  }
+
+  100% {
+    transform: scale(.5,.5);
+  }
+}

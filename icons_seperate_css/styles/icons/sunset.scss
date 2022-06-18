@@ -1,0 +1,48 @@
+// Animations: fillOpacity2, translateArrowDown, scale
+
+@import '../variables';
+
+.climacon.sunset {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .sun {
+    .fill {
+      fill: $sun-fill;
+    }
+
+    .stroke {
+      fill: $sun-stroke;
+    }
+  }
+
+  .arrow {
+    .fill {
+      fill: $black;
+    }
+  }
+
+  .arrow-down {
+    animation-duration: 3s;
+    animation-name: fillOpacity2, translateArrowDown;
+    fill-opacity: 0;
+  }
+
+  .sun-spoke {
+    animation-delay: 0;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: scale;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+
+    &:nth-child(even) {
+      animation-delay: 3s;
+    }
+  }
+}

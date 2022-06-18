@@ -1,0 +1,87 @@
+.climacon {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .sun {
+    .fill {
+      fill: $sun-fill;
+    }
+
+    .stroke {
+      fill: $sun-stroke;
+    }
+  }
+
+  .cloud {
+    .fill {
+      fill: $cloud-fill;
+    }
+
+    .stroke {
+      fill: $cloud-stroke;
+    }
+
+    &.dark {
+      .fill {
+        fill: $cloud-dark-fill;
+      }
+
+      .stroke {
+        fill: $cloud-dark-stroke;
+      }
+    }
+  }
+
+  .snow {
+    fill: $snow;
+
+    .fill {
+      fill: $snow;
+    }
+  }
+
+  .ice {
+    .fill {
+      fill: $ice;
+    }
+  }
+
+  .moon {
+    .stroke {
+      fill: $moon-stroke;
+    }
+
+    .fill {
+      fill: $moon-fill;
+    }
+  }
+
+  .water {
+    .fill {
+      fill: $water;
+    }
+  }
+
+  .lightning {
+    .fill {
+      fill: $lightning;
+    }
+  }
+
+  .arrow {
+    .fill {
+      fill: $black;
+    }
+  }
+
+  .horizon {
+    .fill {
+      fill: $black;
+    }
+  }
+}

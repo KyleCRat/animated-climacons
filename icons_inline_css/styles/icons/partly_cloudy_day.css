@@ -1,0 +1,70 @@
+svg {
+  shape-rendering: geometricPrecision; }
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%; }
+
+.climacon.partly-cloudy-day .fill {
+  fill: #fff; }
+.climacon.partly-cloudy-day .stroke {
+  fill: #fff; }
+.climacon.partly-cloudy-day .sun-wrapper {
+  transform: translateX(0) translateY(0);
+  animation-delay: 0;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-name: behindCloudMove;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+.climacon.partly-cloudy-day .sun {
+  animation-delay: 3s;
+  animation-duration: 36s;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  animation-timing-function: linear; }
+  .climacon.partly-cloudy-day .sun .fill {
+    fill: #cdcd1d; }
+  .climacon.partly-cloudy-day .sun .stroke {
+    fill: #dfdf20; }
+.climacon.partly-cloudy-day .sun-spoke {
+  animation-delay: 3s, 3s;
+  animation-duration: 3s;
+  animation-iteration-count: 1, infinite;
+  animation-name: fillOpacity, scale;
+  animation-fill-mode: both;
+  fill-opacity: 0;
+  animation-direction: alternate; }
+.climacon.partly-cloudy-day .sun-spoke:nth-child(even) {
+  animation-delay: 3s, 6s; }
+
+@keyframes behindCloudMove {
+  0% {
+    transform: translateX(-10.75px) translateY(10.75px); }
+  20% {
+    transform: translateX(0) translateY(0); }
+  50% {
+    transform: translateX(0) translateY(0); }
+  100% {
+    transform: translateX(-10.75px) translateY(10.75px); } }
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes fillOpacity {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 1; } }
+
+/*# sourceMappingURL=partly_cloudy_day.css.map */

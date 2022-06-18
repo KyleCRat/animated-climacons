@@ -1,0 +1,26 @@
+// Animations: translateFog, fillOpacityFog
+
+@import '../variables';
+
+.climacon.fog {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .fog-line {
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: translateFog, fillOpacityFog;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    fill-opacity: .5;
+
+    &:nth-child(even) {
+      animation-delay: 6s;
+    }
+  }
+}

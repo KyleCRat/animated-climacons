@@ -1,0 +1,17 @@
+@keyframes behindCloudMove {
+  0% {
+    transform: translateX(-10.75px) translateY(10.75px);
+  }
+
+  20% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(-10.75px) translateY(10.75px);
+  }
+}

@@ -1,0 +1,20 @@
+// Animations: translateWind
+
+@import '../variables';
+
+.climacon.wind {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .wind {
+    animation-duration: 4s;
+    animation-name: translateWind;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+}

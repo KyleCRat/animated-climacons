@@ -1,0 +1,54 @@
+// Animations: rainFall, fillOpacity2
+
+@import '../variables';
+
+.climacon.shower {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .water {
+    .fill {
+      fill: $water;
+    }
+  }
+
+  .cloud {
+    .fill {
+      fill: $cloud-fill;
+    }
+
+    .stroke {
+      fill: $cloud-stroke;
+    }
+
+    &.dark {
+      .fill {
+        fill: $cloud-dark-fill;
+      }
+
+      .stroke {
+        fill: $cloud-dark-stroke;
+      }
+    }
+  }
+
+  .shower {
+    animation-duration: 2s;
+    animation-name: rainFall, fillOpacity2;
+    animation-timing-function: ease-in;
+    fill-opacity: 0;
+  }
+
+  .shower:nth-child(n+4) {
+    animation-delay: 1s;
+  }
+
+  .shower-alt:nth-child(2) {
+    animation-delay: 1s;
+  }
+}

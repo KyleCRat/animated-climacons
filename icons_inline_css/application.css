@@ -1,0 +1,18 @@
+html {
+  display: flex;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  background-color: #404040;
+}
+
+img {
+  width: 11vw;
+  height: 11vw;
+}

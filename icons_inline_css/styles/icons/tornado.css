@@ -1,0 +1,93 @@
+svg {
+  shape-rendering: geometricPrecision; }
+
+circle,
+g,
+path,
+rect {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transform-box: fill-box;
+  transform-origin: 50% 50%; }
+
+.climacon.tornado .fill {
+  fill: #fff; }
+.climacon.tornado .stroke {
+  fill: #fff; }
+.climacon.tornado .tornado-line {
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-name: translateTornado1;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate; }
+  .climacon.tornado .tornado-line:nth-child(1) {
+    animation-name: translateTornado1; }
+  .climacon.tornado .tornado-line:nth-child(2) {
+    animation-name: translateTornado2; }
+  .climacon.tornado .tornado-line:nth-child(3) {
+    animation-name: translateTornado3; }
+  .climacon.tornado .tornado-line:nth-child(4) {
+    animation-name: translateTornado4; }
+  .climacon.tornado .tornado-line:nth-child(5) {
+    animation-name: translateTornado5; }
+  .climacon.tornado .tornado-line:nth-child(6) {
+    animation-name: translateTornado6; }
+
+@keyframes translateTornado1 {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateX(4px); }
+  75% {
+    transform: translateX(-4px); }
+  100% {
+    transform: translateX(0); } }
+@keyframes translateTornado2 {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateX(2px); }
+  75% {
+    transform: translateX(-2px); }
+  100% {
+    transform: translateX(0); } }
+@keyframes translateTornado3 {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateX(8px); }
+  75% {
+    transform: translateX(-8px); }
+  100% {
+    transform: translateX(0); } }
+@keyframes translateTornado4 {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateX(6px); }
+  75% {
+    transform: translateX(-6px); }
+  100% {
+    transform: translateX(0); } }
+@keyframes translateTornado5 {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateX(10px); }
+  75% {
+    transform: translateX(-10px); }
+  100% {
+    transform: translateX(0); } }
+@keyframes translateTornado6 {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateX(6px); }
+  75% {
+    transform: translateX(-6px); }
+  100% {
+    transform: translateX(0); } }
+
+/*# sourceMappingURL=tornado.css.map */

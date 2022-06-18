@@ -1,0 +1,36 @@
+// Animations: rotate, scale
+
+@import '../variables';
+
+.climacon.clear-day {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .sun {
+    animation-duration: 32s;
+    animation-name: rotate;
+
+    .fill {
+      fill: $sun-fill;
+    }
+
+    .stroke {
+      fill: $sun-stroke;
+    }
+  }
+
+  .sun-spoke {
+    animation-name: scale;
+    animation-direction: alternate;
+    animation-duration: 3s;
+  }
+
+  .sun-spoke:nth-child(even) {
+    animation-delay: 3s;
+  }
+}

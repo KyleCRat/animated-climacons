@@ -1,0 +1,25 @@
+// Animations: wobble
+
+@import '../variables';
+
+.climacon.clear-night {
+  .fill {
+    fill: $climacon-default-stroke;
+  }
+
+  .stroke {
+    fill: $climacon-default-fill;
+  }
+
+  .moon {
+    animation-name: wobble;
+
+    .stroke {
+      fill: $moon-stroke;
+    }
+
+    .fill {
+      fill: $moon-fill;
+    }
+  }
+}
