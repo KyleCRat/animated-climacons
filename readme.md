@@ -1,2 +1,2 @@
-#Animated SVG Climacons
+# Animated SVG Climacons
 Adam Whitcroft's Climacons as SVGs animated with CSS by Noah Blon and packaged by Kyle Ratliff.
